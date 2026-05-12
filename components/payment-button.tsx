@@ -17,6 +17,7 @@ import { cn } from "@/lib/utils";
 import { loadStripe } from "@stripe/stripe-js";
 import Link from "next/link";
 import { useCallback } from "react";
+import { useTranslations } from "next-intl";
 
 type PaymentButtonProps = {
 	children: React.ReactNode;
@@ -34,7 +35,6 @@ export default function PaymentButton({
 	);
 
 	const fetchClientSecret = useCallback(async () => {
-		// Create a Checkout Session
 		return fetch("/api/checkout", {
 			method: "POST",
 			headers: {
@@ -59,13 +59,13 @@ export default function PaymentButton({
 					{children}
 				</Button>
 			</DialogTrigger>
-			<DialogContent className="my-4  py-12  ">
+			<DialogContent className="my-4 py-12">
 				{!isLoggedIn && <LoggedOutContent />}
 				{isLoggedIn && (
 					<>
 						<VisuallyHidden.Root>
 							<DialogTitle className="text-xl font-semibold">
-								Pro Membership
+								<ModalTitle />
 							</DialogTitle>
 						</VisuallyHidden.Root>
 						<EmbeddedCheckoutProvider stripe={stripePromise} options={options}>
@@ -78,17 +78,26 @@ export default function PaymentButton({
 	);
 }
 
+function ModalTitle() {
+	const t = useTranslations("payment.modal");
+	return <>{t("proMembership")}</>;
+}
+
 function LoggedOutContent() {
+	const t = useTranslations("payment.modal");
+
 	return (
 		<>
-			<DialogTitle className="flex items-center gap-2">Ops...</DialogTitle>
-			<h2>Você precisa possuir uma conta para assinar!</h2>
+			<DialogTitle className="flex items-center gap-2">
+				{t("opsTitle")}
+			</DialogTitle>
+			<h2>{t("needAccount")}</h2>
 			<Link href="/cadastro" className={buttonVariants({ variant: "default" })}>
-				Criar Conta
+				{t("createAccount")}
 			</Link>
 
 			<p className="text-muted-foreground text-sm mt-2">
-				Já possui conta?
+				{t("hasAccount")}
 				<Link
 					className={cn(
 						buttonVariants({ variant: "link" }),
@@ -96,7 +105,7 @@ function LoggedOutContent() {
 					)}
 					href="/login"
 				>
-					Faça seu login
+					{t("loginLink")}
 				</Link>
 			</p>
 		</>

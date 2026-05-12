@@ -1,0 +1,123 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "bookOfMonth": "Livro do Mês",
+    "mySubscription": "Minha Assinatura",
+    "login": "Login",
+    "logout": "Logout",
+    "menu": "Menu",
+    "price": "Preço",
+    "howItWorks": "Funcionamento"
+  },
+  "landing": {
+    "heroTitle": "Simplifique Seus Estudos",
+    "heroSubtitle": "Deixe que nós fazemos a curadoria para você. Assine nossa plataforma e receba todos os meses um ebook novo de programação.",
+    "emailPlaceholder": "Coloque seu email",
+    "subscribeNow": "Assine Agora",
+    "disclaimer": "Comece sua assinatura agora mesmo. Cancele quando quiser.",
+    "howItWorksTitle": "Como funciona?",
+    "featureOneBook": "Acesso a 1 ebook por mês",
+    "featureCuration": "Curadoria especial",
+    "featureCancel": "Cancele quando quiser",
+    "featureUnlimited": "Acesso ilimitado",
+    "pricingTitle": "Preço Simples e Transparente",
+    "pricingDescription": "Pra que inúmeros planos quando nós sabemos exatamente o que é melhor para você? Assine o nosso plano mensal Pro Premium VIP e garanta mensalmente um ebook novo de programação. E por menos de um café por dia.",
+    "ctaTitle": "Pronto Para Mudar Sua Vida?",
+    "ctaDescription": "Faça como milhares de outras pessoas. Assine nosso produto e tenha garantido seus estudos",
+    "copyright": "© 2024 LivroSaaS. Todos os direitos reservados.",
+    "altLogo": "Logotipo",
+    "altWoman": "Mulher carregando caixas"
+  },
+  "auth": {
+    "login": {
+      "title": "Boas Vindas",
+      "description": "Faça seu login com email e senha.",
+      "emailLabel": "Email",
+      "emailPlaceholder": "eu@exemplo.com",
+      "passwordLabel": "Senha",
+      "passwordPlaceholder": "********",
+      "submitButton": "Login",
+      "noAccount": "Não possui cadastro?",
+      "registerLink": "Registre-se"
+    },
+    "register": {
+      "title": "Cadastre-se",
+      "description": "Faça seu cadastro gratuitamente.",
+      "nameLabel": "Nome",
+      "namePlaceholder": "Fulano de Tal",
+      "emailLabel": "Email",
+      "emailPlaceholder": "eu@exemplo.com",
+      "passwordLabel": "Senha",
+      "passwordPlaceholder": "********",
+      "submitButton": "Registrar",
+      "submittingButton": "Registrando...",
+      "hasAccount": "Já possui cadastro?",
+      "loginLink": "Faça o login",
+      "errorPrefix": "Erro!",
+      "successPrefix": "Sucesso!"
+    }
+  },
+  "dashboard": {
+    "bookOfMonth": {
+      "title": "Livro do Mês",
+      "altImage": "Livro do mês",
+      "downloadPdf": "Download do Pdf",
+      "noSubscription": "Para acessar o livro do mês, você precisa de uma assinatura ativa. Quer tal assinar agora?"
+    },
+    "mySubscription": {
+      "title": "Minha Assinatura",
+      "noSubscription": "Você precisa de uma assinatura ativa. Quer tal assinar agora?",
+      "detailsTitle": "Detalhes da Assinatura",
+      "detailsDescription": "Informações sobre seu plano atual",
+      "plan": "Plano:",
+      "status": "Status:",
+      "nextPayment": "Próxima cobrança:",
+      "amount": "Valor:",
+      "cycle": "Ciclo:",
+      "actionsTitle": "Ações",
+      "actionsDescription": "Gerencie sua assinatura",
+      "updatePayment": "Atualizar método de pagamento",
+      "cancelSubscription": "Cancelar assinatura"
+    }
+  },
+  "payment": {
+    "confirmation": {
+      "title": "Assinatura Confirmada",
+      "description": "Obrigado por se juntar a nossa comunidade Livro Saas.",
+      "message1": "Sua assinatura foi confirmada com sucesso.",
+      "message2": "Agora é só aproveitar o nosso conteúdo.",
+      "goToDashboard": "Ir para o Dashboard"
+    },
+    "modal": {
+      "proMembership": "Pro Membership",
+      "opsTitle": "Ops...",
+      "needAccount": "Você precisa possuir uma conta para assinar!",
+      "createAccount": "Criar Conta",
+      "hasAccount": "Já possui conta?",
+      "loginLink": "Faça seu login"
+    }
+  },
+  "pricing": {
+    "cardTitle": "Plano Pro Premium VIP",
+    "cardDescription": "Tudo que você precisa para seus estudos",
+    "perMonth": "/mês",
+    "subscribe": "Assine Agora"
+  },
+  "common": {
+    "loading": "Carregando...",
+    "close": "Close",
+    "error": "Erro!"
+  },
+  "serverActions": {
+    "login": {
+      "invalidCredentials": "Dados de login incorretos.",
+      "genericError": "Ops, algum erro aconteceu!"
+    },
+    "register": {
+      "fillAllFields": "Preencha todos os campos",
+      "userAlreadyExists": "Este usuário já existe",
+      "success": "Conta criada com sucesso!",
+      "genericError": "Erro ao criar usuário. Tente novamente."
+    }
+  }
+}

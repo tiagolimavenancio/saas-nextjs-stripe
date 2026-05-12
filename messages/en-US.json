@@ -1,0 +1,123 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "bookOfMonth": "Book of the Month",
+    "mySubscription": "My Subscription",
+    "login": "Login",
+    "logout": "Logout",
+    "menu": "Menu",
+    "price": "Pricing",
+    "howItWorks": "How It Works"
+  },
+  "landing": {
+    "heroTitle": "Simplify Your Studies",
+    "heroSubtitle": "Let us do the curation for you. Subscribe to our platform and receive a new programming ebook every month.",
+    "emailPlaceholder": "Enter your email",
+    "subscribeNow": "Subscribe Now",
+    "disclaimer": "Start your subscription now. Cancel anytime.",
+    "howItWorksTitle": "How It Works?",
+    "featureOneBook": "Access to 1 ebook per month",
+    "featureCuration": "Special curation",
+    "featureCancel": "Cancel anytime",
+    "featureUnlimited": "Unlimited access",
+    "pricingTitle": "Simple and Transparent Pricing",
+    "pricingDescription": "Why have countless plans when we know exactly what's best for you? Subscribe to our monthly Pro Premium VIP plan and get a new programming ebook every month. For less than a coffee a day.",
+    "ctaTitle": "Ready to Change Your Life?",
+    "ctaDescription": "Join thousands of others. Subscribe to our product and secure your studies",
+    "copyright": "© 2024 LivroSaaS. All rights reserved.",
+    "altLogo": "Logo",
+    "altWoman": "Woman carrying boxes"
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome Back",
+      "description": "Sign in with your email and password.",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@example.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "********",
+      "submitButton": "Login",
+      "noAccount": "Don't have an account?",
+      "registerLink": "Sign up"
+    },
+    "register": {
+      "title": "Sign Up",
+      "description": "Create your account for free.",
+      "nameLabel": "Name",
+      "namePlaceholder": "John Doe",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@example.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "********",
+      "submitButton": "Register",
+      "submittingButton": "Registering...",
+      "hasAccount": "Already have an account?",
+      "loginLink": "Sign in",
+      "errorPrefix": "Error!",
+      "successPrefix": "Success!"
+    }
+  },
+  "dashboard": {
+    "bookOfMonth": {
+      "title": "Book of the Month",
+      "altImage": "Book of the month",
+      "downloadPdf": "Download PDF",
+      "noSubscription": "To access the book of the month, you need an active subscription. Want to subscribe now?"
+    },
+    "mySubscription": {
+      "title": "My Subscription",
+      "noSubscription": "You need an active subscription. Want to subscribe now?",
+      "detailsTitle": "Subscription Details",
+      "detailsDescription": "Information about your current plan",
+      "plan": "Plan:",
+      "status": "Status:",
+      "nextPayment": "Next payment:",
+      "amount": "Amount:",
+      "cycle": "Cycle:",
+      "actionsTitle": "Actions",
+      "actionsDescription": "Manage your subscription",
+      "updatePayment": "Update payment method",
+      "cancelSubscription": "Cancel subscription"
+    }
+  },
+  "payment": {
+    "confirmation": {
+      "title": "Subscription Confirmed",
+      "description": "Thank you for joining our Livro Saas community.",
+      "message1": "Your subscription was confirmed successfully.",
+      "message2": "Now you can enjoy our content.",
+      "goToDashboard": "Go to Dashboard"
+    },
+    "modal": {
+      "proMembership": "Pro Membership",
+      "opsTitle": "Oops...",
+      "needAccount": "You need to have an account to subscribe!",
+      "createAccount": "Create Account",
+      "hasAccount": "Already have an account?",
+      "loginLink": "Sign in"
+    }
+  },
+  "pricing": {
+    "cardTitle": "Pro Premium VIP Plan",
+    "cardDescription": "Everything you need for your studies",
+    "perMonth": "/month",
+    "subscribe": "Subscribe Now"
+  },
+  "common": {
+    "loading": "Loading...",
+    "close": "Close",
+    "error": "Error!"
+  },
+  "serverActions": {
+    "login": {
+      "invalidCredentials": "Invalid login credentials.",
+      "genericError": "Oops, something went wrong!"
+    },
+    "register": {
+      "fillAllFields": "Please fill in all fields",
+      "userAlreadyExists": "This user already exists",
+      "success": "Account created successfully!",
+      "genericError": "Error creating user. Please try again."
+    }
+  }
+}
