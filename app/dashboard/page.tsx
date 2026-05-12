@@ -1,11 +1,29 @@
+import { auth } from "@/auth";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Download } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import bookImg from "./book.png";
+import BannerWarning from "@/components/banner-warning";
+import PricingCard from "@/components/pricing-card";
+import { fetchSubscriptionByEmail } from "@/lib/stripe";
 
 export default async function MonthlyBook() {
+	const session = await auth();
+	const userEmail = session?.user?.email as string;
+
+	const subscription = await fetchSubscriptionByEmail(userEmail);
+
+	if (!subscription) {
+		return (
+			<>
+				<BannerWarning text="Para acessar o livro do mês, você precisa de uma assinatura ativa. Quer tal assinar agora?" />
+				<PricingCard />
+			</>
+		);
+	}
+
 	return (
 		<>
 			<h1 className="text-3xl font-bold mb-6">Livro do Mês</h1>
